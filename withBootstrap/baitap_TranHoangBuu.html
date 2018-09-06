@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TranHoangBuu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="col-sm-12">
+      <div class="row head_top">
+        <div class="col-sm-12 col-xl-4 col-12">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a id="t1" class="nav-link" href="#">Tiếng việt</a>
+            </li>
+            <li class="nav-item">
+              <a id="t2" class="nav-link" href="#">English</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-xl-4 col-12">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a id="m1" class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="m2" class="nav-link" href="#">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a id="m3" class="nav-link" href="#">Liên hệ</a>
+            </li>
+            <li class="nav-item">
+              <a id="m4" class="nav-link" href="#">Tuyển dụng</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-xl-4">
+          <div class="row">
+            <div class="col-sm-6 col-xl-6 col-6">
+              <div class="justify-content-end">
+                <form>
+                  <input type="" class="seach form-control" placeholder="Tìm kiếm ..." name="">
+                </form>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-6 col-6">
+              <div class="dropdown">
+                <button type="button" class="btn btn-black dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-mobile-phone"></i> Hotline
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image_logo_nav">
+      <div class="col-sm-12 text-center">
+        <div class="fakeimg-logo-to" style="height:100px;">
+            <img class="image-logo-to" src="images/logoto.png">
+          </div>
+      </div>
+      <hr style="margin-bottom: 3px;">
+      <div class="col-sm-12">
+        <ul class="nav justify-content-center text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="#">trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">du học</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">anh ngữ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">tin tức</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">lịch sự kiện</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">liên hệ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">đăng ký hội thảo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-12 slide-mid text-center">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="file:///E:/HoangBuu/THUC_TAP_TOAN_CAU_XANH/withBootstrap/anhslide.svg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="file:///E:/HoangBuu/THUC_TAP_TOAN_CAU_XANH/withBootstrap/anhslide.svg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="file:///E:/HoangBuu/THUC_TAP_TOAN_CAU_XANH/withBootstrap/anhslide.svg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <h4 class="text-uppercase label">tin tức</h4>
+    <br>
+    <div class="row">
+      <div class="col-sm-6 col-xl-3 col-6">
+        <div class="col-sm-12">
+          <div class="fakeimg" style="height:100px;">
+            <img class="image-tin-tuc" src="images/Layer106.png">
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <p class="text-center">
+            <a class="link-tin-tuc" href="">Center aligned text on all viewport sizes.</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3 col-6">
+        <div class="col-sm-12">
+          <div class="fakeimg" style="height:100px;">
+            <img class="image-tin-tuc" src="images/Layer106.png">
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <p class="text-center">
+            <a class="link-tin-tuc" href="">Center aligned text on all viewport sizes.</a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3 col-6">
+        <div class="col-sm-12">
+          <div class="fakeimg" style="height:100px;">
+            <img class="image-tin-tuc" src="images/Layer106.png">            
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <p class="text-center">
+            <a class="link-tin-tuc" href="">Center aligned text on all viewport sizes.</a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3 col-6">
+        <div class="col-sm-12">
+          <div class="fakeimg" style="height:100px;">
+            <img class="image-tin-tuc" src="images/Layer106.png">
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <p class="text-center">
+            <a class="link-tin-tuc" href="">Center aligned text on all viewport sizes.</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-12 col-xl-4">
+        <h4 class="text-uppercase label">Lịch sự kiện</h4>
+        <br>
+        <div class="row su-kien">
+          <div class="col-sm-4 col-4">
+            <div class="fakeimg" style="height:58px;">Image</div>
+          </div>
+          <div class="col-sm-8 col-8">
+            <div class="col-sm-12">
+              <p class="text-left label-sukien">
+                <strong>Left aligned text on all.</strong>
+              </p>
+            </div>
+            <div class="col-sm-12">
+              <i class="fa fa-clock-o"></i>
+              <small> 04:00-06:00 pm</small>
+            </div>
+          </div>
+        </div>
+        <div class="row su-kien">
+          <div class="col-sm-4 col-4">
+            <div class="fakeimg" style="height:58px;">Image</div>
+          </div>
+          <div class="col-sm-8 col-8">
+            <div class="col-sm-12">
+              <p class="text-left label-sukien">
+                <strong>Left aligned text on all.</strong>
+              </p>
+            </div>
+            <div class="col-sm-12">
+              <i class="fa fa-clock-o"></i>
+              <small> 04:00-06:00 pm</small>
+            </div>
+          </div>
+        </div>
+        <div class="row su-kien">
+          <div class="col-sm-4 col-4">
+            <div class="fakeimg" style="height:58px;">Image</div>
+          </div>
+          <div class="col-sm-8 col-8">
+            <div class="col-sm-12">
+              <p class="text-left label-sukien">
+                <strong>Left aligned text on all.</strong>
+              </p>
+            </div>
+            <div class="col-sm-12">
+              <i class="fa fa-clock-o"></i>
+              <small> 04:00-06:00 pm</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-xl-8">
+        <h4 class="text-uppercase label">du học</h4>
+        <br>
+        <div class="row">
+          <div class="col-sm-4 col-4">
+            <div class="fakeimg" style="height:100px;">
+              <img class="image-du-hoc" src="images/Layer102.png">
+            </div>
+          </div>
+          <div class="col-sm-4 col-4">
+            <div class="fakeimg" style="height:100px;">
+              <img class="image-du-hoc" src="images/Layer102.png">
+            </div>
+          </div>
+          <div class="col-sm-4 col-4">
+            <div class="fakeimg" style="height:100px;">
+              <img class="image-du-hoc" src="images/Layer102.png">
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-4 col-4">
+            <div class="fakeimg" style="height:100px;">
+              <img class="image-du-hoc" src="images/Layer102.png">
+            </div>
+          </div>
+          <div class="col-sm-4 col-4">
+            <div class="fakeimg" style="height:100px;">
+              <img class="image-du-hoc" src="images/Layer102.png">
+            </div>
+          </div>
+          <div class="col-sm-4 col-4">
+            <div class="fakeimg" style="height:100px;">
+              <img class="image-du-hoc" src="images/Layer102.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row text-center text-uppercase">
+      <div class="col-sm-4">
+        <div class="card1 card_moi_goi cau-hoi">
+          <h5>câu hỏi thường gặp</h5>
+          <hr class="hr-cach">
+          <p>các câu hỏi thường gặp</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card1 card_moi_goi chuong-trinh">
+          <h5>câu hỏi thường gặp</h5>
+          <hr class="hr-cach">
+          <p>các câu hỏi thường gặp</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card1 card_moi_goi dang-ky">
+          <h5>đăng ký nhận danh sách cẩm nang du học</h5>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="gachtext">
+      <span class="tieudegachngang">
+        Ý KIẾN KHÁCH HÀNG & BẢO TRỢ THÔNG TIN
+      </span>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-6 col-xl-3 col-6">
+        <p class="speech">SitePoint Rocks!</p>
+        <br>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="fakeimg" style="height:58px;"><img class="image-y-kien-hoc" src="images/Layer89.png"></div>
+          </div>
+          <div class="col-sm-8">
+            <p class="text-left className">
+              <strong> Nguyễn Phương Tú</strong>
+            </p>
+            <small>he he he he ehhehe ehe eh</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3 col-6">
+        <p class="speech">SitePoint Rocks!</p>
+        <br>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="fakeimg" style="height:58px;"><img class="image-y-kien-hoc" src="images/Layer89.png"></div>
+          </div>
+          <div class="col-sm-8">
+            <p class="text-left className">
+              <strong> Nguyễn Phương Tú</strong>
+            </p>
+            <small>he he he he ehhehe ehe eh</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3 col-6">
+        <p class="speech">SitePoint Rocks!</p>
+        <br>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="fakeimg" style="height:58px;"><img class="image-y-kien-hoc" src="images/Layer89.png"></div>
+          </div>
+          <div class="col-sm-8">
+            <p class="text-left className">
+              <strong> Nguyễn Phương Tú</strong>
+            </p>
+            <small>he he he he ehhehe ehe eh</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3 col-6">
+        <p class="speech">SitePoint Rocks!</p>
+        <br>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="fakeimg" style="height:58px;"><img class="image-y-kien-hoc" src="images/Layer89.png"></div>
+          </div>
+          <div class="col-sm-8">
+            <p class="text-left className">
+              <strong> Nguyễn Phương Tú</strong>
+            </p>
+            <small>he he he he ehhehe ehe eh</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-4 col-xl-2 col-6">
+        <div class="imagedoanhnghiep" style="height:100px;"><img class="image-doanh-nghiep" src="images/Layer79.png"></div>
+      </div>
+      <div class="col-sm-4 col-xl-2 col-6">
+        <div class="imagedoanhnghiep" style="height:100px;"><img class="image-doanh-nghiep" src="images/Layer79.png"></div>
+      </div>
+      <div class="col-sm-4 col-xl-2 col-6">
+        <div class="imagedoanhnghiep" style="height:100px;"><img class="image-doanh-nghiep" src="images/Layer79.png"></div>
+      </div>
+      <div class="col-sm-4 col-xl-2 col-6">
+        <div class="imagedoanhnghiep" style="height:100px;"><img class="image-doanh-nghiep" src="images/Layer79.png"></div>
+      </div>
+      <div class="col-sm-4 col-xl-2 col-6">
+        <div class="imagedoanhnghiep" style="height:100px;"><img class="image-doanh-nghiep" src="images/Layer79.png"></div>
+      </div>
+      <div class="col-sm-4 col-xl-2 col-6">
+        <div class="imagedoanhnghiep" style="height:100px;"><img class="image-doanh-nghiep" src="images/Layer79.png"></div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <br>
+    <div class="gachtext">
+      <span class="tieudegachngang">
+        ĐƠN VỊ BẢO TRỢ THÔNG TIN
+      </span>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-4 col-xs-12">
+        <div class="imagebaitro" style="height:100px;"><img class="image-dvbt" src="images/Layer82.png"></div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="imagebaitro" style="height:100px;"><img class="image-dvbt" src="images/Layer82.png"></div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="imagebaitro" style="height:100px;"><img class="image-dvbt" src="images/Layer82.png"></div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="footer">
+    <br>
+    <div class="footer-thu-gon">
+      <div class="row">
+        <div class="col-sm-6 col-xl-3 col-6">
+          <ul>
+            <li>
+              <a href="#">Du học</a>
+            </li>
+            <li>
+              <a href="#">Anh ngữ</a>
+            </li>
+            <li>
+              <a href="#">Chương trình</a>
+            </li>
+            <li>
+              <a href="#">Liên kết</a>
+            </li>
+            <li>
+              <a href="#">Bài viết</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-xl-3 col-6">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Giới thiệu</a>
+            </li>
+            <li>
+              <a href="#">Liên hệ</a>
+            </li>
+            <li>
+              <a href="#">Tuyển dụng</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-xl-3 col-6">
+          <div class="text-left">
+            <h4 class="text-uppercase">subscribe</h4>
+            <p>Signing up for our updates with exciting offers and event from studylink</p>
+            <form>
+              <input class="footer1 form-control" placeholder="You email" name="">
+              <br>
+              <button type="submit" class="btn btn-secondary">SEND
+                <i class="fa fa-send"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-3 col-6">
+          <div class="text-right">
+            <p>Copyrights 2014 STUDYLINK.ORG</p>
+            <p>Alrights reserved</p>
+            <h4 class="text-uppercase">follow us on</h4>
+            <p class="fb">
+              <a href="">
+                <i class="fa fa-facebook-f">-</i>facebook.com/stydylink</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12 col-xl-6">
+          <div class="tab col-12">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">HCM</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">HaNoi</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">DaNang </button>
+            <button class="tablinks" onclick="openCity(event, 'Melbourne')">Melbourne</button>
+            <button class="tablinks" onclick="openCity(event, 'Adelaide')">Adelaide </button>
+          </div>
+
+          <div id="London" class="tabcontent">
+            <h3>Nguyen thi minh khai 1</h3>
+            <p>sdt dia chi van van van</p>
+          </div>
+
+          <div id="Paris" class="tabcontent">
+            <h3>Nguyen thi minh khai 2</h3>
+            <p>sdt dia chi van van van</p>
+          </div>
+
+          <div id="Tokyo" class="tabcontent">
+            <h3>Nguyen thi minh khai 3</h3>
+            <p>sdt dia chi van van van</p>
+          </div>
+
+
+          <div id="Melbourne" class="tabcontent">
+            <h3>Nguyen thi minh khai 4</h3>
+            <p>sdt dia chi van van van</p>
+          </div>
+
+          <div id="Adelaide" class="tabcontent">
+            <h3>Nguyen thi minh khai 5</h3>
+            <p>sdt dia chi van van van</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-xl-6 text-right">
+          <div class="imageFooter" style="height:100px;">Image</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
